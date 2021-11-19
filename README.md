@@ -1,5 +1,13 @@
+## 重要
+
+打开`ui_yolov5.py`文件，运行即可。环境配置参考yolov5官方配置（https://github.com/ultralytics/yolov5）
+
+#  以下为yolov5官方readme
+
 <a align="left" href="https://apps.apple.com/app/id1452689527" target="_blank">
-<img width="850" src="https://user-images.githubusercontent.com/26833433/121094150-72607500-c7ee-11eb-9f39-1d9e4ce89a9e.jpg"></a>
+<img width="850" src="https://user-images.githubusercontent.com/26833433/121094150-72607500-c7ee-11eb-9f39-1d9e4ce89a9e.jpg">
+
+</a>
 &nbsp
 
 <a href="https://github.com/ultralytics/yolov5/actions"><img src="https://github.com/ultralytics/yolov5/workflows/CI%20CPU%20testing/badge.svg" alt="CI CPU testing"></a>
@@ -9,12 +17,12 @@ This repository represents Ultralytics open-source research into future object d
 <p align="left"><img width="800" src="https://user-images.githubusercontent.com/26833433/114313216-f0a5e100-9af5-11eb-8445-c682b60da2e3.png"></p>
 <details>
   <summary>YOLOv5-P5 640 Figure (click to expand)</summary>
-  
+
 <p align="left"><img width="800" src="https://user-images.githubusercontent.com/26833433/114313219-f1d70e00-9af5-11eb-9973-52b1f98d321a.png"></p>
 </details>
 <details>
   <summary>Figure Notes (click to expand)</summary>
-  
+
   * GPU Speed measures end-to-end time per image averaged over 5000 COCO val2017 images using a V100 GPU with batch size 32, and includes image preprocessing, PyTorch FP16 inference, postprocessing and NMS. 
   * EfficientDet data from [google/automl](https://github.com/google/automl) at batch size 8.
   * **Reproduce** by `python test.py --task study --data coco.yaml --iou 0.7 --weights yolov5s6.pt yolov5m6.pt yolov5l6.pt yolov5x6.pt`
@@ -46,7 +54,7 @@ This repository represents Ultralytics open-source research into future object d
 
 <details>
   <summary>Table Notes (click to expand)</summary>
-  
+
   * AP<sup>test</sup> denotes COCO [test-dev2017](http://cocodataset.org/#upload) server results, all other AP results denote val2017 accuracy.  
   * AP values are for single-model single-scale unless otherwise noted. **Reproduce mAP** by `python test.py --data coco.yaml --img 640 --conf 0.001 --iou 0.65`  
   * Speed<sub>GPU</sub> averaged over 5000 COCO val2017 images using a GCP [n1-standard-16](https://cloud.google.com/compute/docs/machine-types#n1_standard_machine_types) V100 instance, and includes FP16 inference, postprocessing and NMS. **Reproduce speed** by `python test.py --data coco.yaml --img 640 --conf 0.25 --iou 0.45`  
